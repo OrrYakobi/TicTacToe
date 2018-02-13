@@ -1,5 +1,3 @@
-package ticTacToe;
-
 import java.util.*;
 
 public class TicTacToe{
@@ -50,8 +48,8 @@ public class TicTacToe{
 	}
 	
 	/*
-	 * Prompt the user to either stop playing or start a new game
-	 * once the current game has ended
+	 * Prompts the user to either stop playing or start a new game
+	 * once the current game has ended.
 	 */
 	private static void promptAndReset(){
 		changeTurn();
@@ -85,7 +83,7 @@ public class TicTacToe{
 	}
 	
 	/*
-	 * Changes the players' turn
+	 * Changes the players' turn.
 	 */
 	private static void changeTurn(){
 		if(turn == 0){
@@ -97,7 +95,7 @@ public class TicTacToe{
 	}
 	
 	/*
-	 * Validates that the user has inputted a valid position
+	 * Validates that the user has inputted a valid position.
 	 */
 	private static boolean validInput(String input){
 		char [] charArr = input.toCharArray();
@@ -113,7 +111,7 @@ public class TicTacToe{
 	}
 	
 	/*
-	 * Return the numeric value of the user's input
+	 * Return the numeric value of the user's input.
 	 */
 	private static int parseInput(String input){
 		char [] charArr = input.toCharArray();
@@ -123,7 +121,7 @@ public class TicTacToe{
 	
 	/*
 	 * Initialize all positions to their corresponding 
-	 * in the board.
+	 * indices in the board.
 	 */
 	private static void initPositions(){
 		int count = 0;
@@ -160,15 +158,15 @@ public class TicTacToe{
 	 * The diagonal containing positions 1, 5, and 9 is labeled 7.
 	 * The diagonal containing positions 3, 5, and 7 is labeled 8.
 	 * 
-	 * 			  |	1 2 3 | 7
-	 * 			--|-----------
-	 *  		4 |	1|2|3 | 
-	 *  		  |	----- | 
-	 *  		5 |	4|5|6 | 
-	 *  		  |	----- | 
-	 * 	  		6 |	7|8|9 |
-	 *			--------------
-	 *			  |		  | 8
+	 *                | 1 2 3 | 7
+	 * 		--|-----------
+	 *              4 | 1|2|3 | 
+	 *                | ----- | 
+	 *              5 | 4|5|6 | 
+	 *                | ----- | 
+	 *              6 | 7|8|9 |
+	 *              --------------
+	 *                |       | 8
 	 */
 	public static void initCombos(){
 		combos.put(1, new int[]{1,4,7});
@@ -185,7 +183,7 @@ public class TicTacToe{
 	}
 	
 	/*
-	 * Initialize all scores to 0
+	 * Initialize all scores to 0.
 	 */
 	private static void initScores(){
 		for(int i = 1 ; i < NUM_POSITIONS  ; i++ ){
@@ -194,7 +192,7 @@ public class TicTacToe{
 	}
 	
 	/*
-	 * Check that position isn't taken and set it
+	 * Check that position isn't taken and set it.
 	 */
 	private static boolean setPosition(int position){		
 		if (getPosition(position) != ' '){
@@ -216,7 +214,7 @@ public class TicTacToe{
 	}
 	
 	/*
-	 * Get value at position
+	 * Get value at position.
 	 */
 	private static char getPosition(int position){
 		int i = positions.get(position)[0];
@@ -225,7 +223,7 @@ public class TicTacToe{
 	}
 	
 	/*
-	 * Create a blank board
+	 * Create a blank board.
 	 */
  	private static void initBoard(){
 		for(int i = 0 ; i < board.length ; i = i+2){
@@ -246,7 +244,7 @@ public class TicTacToe{
 	}
 	
  	/*
- 	 * Print the current board
+ 	 * Print the current board.
  	 */
 	private static void printBoard(){
 		for(int i = 0 ; i < board.length ; i++ ){
@@ -259,7 +257,7 @@ public class TicTacToe{
 	
 	/*
 	 * Check if game is won. This can only happen after
-	 * the 5th valid move and when a combinations score 
+	 * the 5th valid move and when a combination's score 
 	 * is 3 or -3.
 	 */
 	private static boolean gameWon(){
