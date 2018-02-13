@@ -157,16 +157,6 @@ public class TicTacToe{
 	 * The row combinations are labeled  4, 5, and 6.
 	 * The diagonal containing positions 1, 5, and 9 is labeled 7.
 	 * The diagonal containing positions 3, 5, and 7 is labeled 8.
-	 * 
-	 * 			  |	1 2 3 | 7
-	 * 			--|-----------
-	 *  		4 |	1|2|3 | 
-	 *  		  |	----- | 
-	 *  		5 |	4|5|6 | 
-	 *  		  |	----- | 
-	 * 	  	6 |	7|8|9 |
-	 *			--------------
-	 *			  |		    | 8
 	 */
 	public static void initCombos(){
 		combos.put(1, new int[]{1,4,7});
