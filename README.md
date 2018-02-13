@@ -6,11 +6,11 @@ Make sure that you have Java installed on your machine. To do so, run
 ```
 >> java -version
 ```
-If you do not have Java intalled, you can install it [here](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html). 
+If you do not have Java installed, you can install it [here](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html). 
 
 ## Setup
 1. Clone the project to your machine
-2. From within the porject directory, compile the program
+2. From within the project directory, compile the program
 ```
 >> javac TicTacToe.java
 ```
@@ -20,7 +20,7 @@ If you do not have Java intalled, you can install it [here](http://www.oracle.co
 ```
 
 ## How to Play
-The Tic-Tac-Toe board is set up with postions 1 through 9 depicted below:
+The Tic-Tac-Toe board is setup with postions 1 through 9 depicted below:
 
  1|2|3
  
@@ -34,6 +34,6 @@ The Tic-Tac-Toe board is set up with postions 1 through 9 depicted below:
  
  The game will prompt users to enter postions where their moves will be made.
  The first player will be o's and the second player will be x's. The game will
- validate that the player has input a valid postion (1 through 9) that isn't
- occupied. When the game is over by either by win or draw, the user will be prompted
+ validate that the player has inputted a valid postion (1 through 9) that isn't
+ occupied. When the game is over by either win or draw, the user will be prompted
  to play again. If they choose to do so, the game will start over.
