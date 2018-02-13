@@ -20,20 +20,18 @@ If you do not have Java installed, you can install it [here](http://www.oracle.c
 ```
 
 ## How to Play
-The Tic-Tac-Toe board is setup with postions 1 through 9 depicted below:
+The Tic-Tac-Toe board is setup with positions 1 through 9 depicted below:
 
+```
  1|2|3
- 
- \----- 
- 
+ ----- 
  4|5|6
- 
- \-----
- 
+ -----
  7|8|9
+```
  
- The game will prompt users to enter postions where their moves will be made.
+ The game will prompt users to enter positions where their moves will be made.
  The first player will be o's and the second player will be x's. The game will
- validate that the player has inputted a valid postion (1 through 9) that isn't
+ validate that the player has inputted a valid position (1 through 9) that isn't
  occupied. When the game is over by either win or draw, the user will be prompted
  to play again. If they choose to do so, the game will start over.
