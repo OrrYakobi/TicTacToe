@@ -39,7 +39,7 @@ public class TicTacToe{
 			lastPosition = position;
 			updateScores();
 			System.out.println();
-			if (numValidMoves > MAX_VALID_MOVES || gameWon()){
+			if (numValidMoves == MAX_VALID_MOVES || gameWon()){
 				promptAndReset();
 			}
 		}
